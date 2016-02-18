@@ -41,6 +41,11 @@ if [ "$DEBUG" = "yes" ]; then
 	set -x
 fi
 
+if [ `uname` = "Darwin" ]; then
+	export FLAGS_GETOPT_CMD=/usr/local/opt/gnu-getopt/bin/getopt
+fi
+
+
 # Setup the GITFLOW_DIR for different operating systems.
 # This is mostly to make sure that we get the correct directory when the
 # git-flow file is a symbolic link
