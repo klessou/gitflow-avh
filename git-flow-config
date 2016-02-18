@@ -123,6 +123,9 @@ file=     Use given config file
 	output=$(git config $gitflow_config_option --get gitflow.prefix.hotfix)
 	echo "Hotfix branch prefix: $output "
 
+	output=$(git config $gitflow_config_option --get gitflow.prefix.operation)
+	echo "Operation branch prefix: $output "
+
 	output=$(git config $gitflow_config_option --get gitflow.prefix.support)
 	echo "Support branch prefix: $output "
 
@@ -176,6 +179,10 @@ file=     Use given config file
 		;;
 	hotfix)
 		cfg_option="gitflow.prefix.hotfix"
+		txt="Hotfix branch prefix"
+		;;
+	operation)
+		cfg_option="gitflow.prefix.operation"
 		txt="Hotfix branch prefix"
 		;;
 	release)

@@ -4,7 +4,7 @@
 #
 # Original Author:
 # Copyright 2010 Vincent Driessen. All rights reserved.
-# 
+#
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
 #
@@ -38,6 +38,7 @@ SCRIPT_FILES =git-flow-init
 SCRIPT_FILES+=git-flow-feature
 SCRIPT_FILES+=git-flow-bugfix
 SCRIPT_FILES+=git-flow-hotfix
+SCRIPT_FILES+=git-flow-operation
 SCRIPT_FILES+=git-flow-release
 SCRIPT_FILES+=git-flow-support
 SCRIPT_FILES+=git-flow-version
